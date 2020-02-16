@@ -1,0 +1,62 @@
+/* Set width to encompass padding, boarder and margin for every element*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+    /* Set root font size for rem */
+    font-size: 16px;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background: #ebebeb;
+}
+
+.body-content {
+    /* prevents page looking strange on wide monitors */
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: 100%;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flexcontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexcontainer p {
+    width: 16rem;
+}
+
+
+#buslinesDropdown {
+    width: 100%;
+}
+
+.flexcontainer-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.map {
+      height: 600px;
+      width: 100%;
+}
+
+@media (min-width: 550px) {
+    .flexcontainer {
+        flex-direction: row;
+    }
+    .flexcontainer-buttons {
+        flex-direction: row;
+    }
+    
+}
