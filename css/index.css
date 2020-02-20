@@ -24,9 +24,9 @@ body {
 
 /* Banner */
 .banner {
-  width: 100%;
+  width: 95%;
   height: 300px;
-  margin-top: 2rem;
+  margin: 2rem auto;
   color: white;
   background: #004d40;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -37,19 +37,17 @@ body {
 }
 
 .banner h1 {
-  font-size: 4rem;
-  outline: 3px solid white;
-  outline-offset: 0.5em;
-  margin: 2rem;
-  display: inline-block;
-}
-.banner p {
   font-size: 2rem;
+  /* display: inline-block; */
+}
+
+.banner p {
+  font-size: 1rem;
   margin: 1rem;
 }
 
 .project {
-  width: 100%;
+  width: 95%;
   margin: 2rem auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding-bottom: 1rem;
@@ -72,4 +70,38 @@ body {
   width: 100%;
   object-fit: cover;
   height: 300px;
+}
+
+.videocontainer {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 500px) {
+  .banner h1 {
+    font-size: 3rem;
+  }
+
+  .banner p {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .banner h1 {
+    font-size: 4rem;
+    outline: 3px solid white;
+    outline-offset: 0.5em;
+    margin: 2rem;
+    /* display: inline-block; */
+  }
 }
