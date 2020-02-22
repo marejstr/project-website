@@ -64,6 +64,7 @@ body {
 
 .project p {
   margin: 1rem;
+  font-size: 16px;
 }
 
 .project img {
